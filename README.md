@@ -1,1 +1,3 @@
-# BingeCast
+# BingeCast ::
+
+BingeCast
