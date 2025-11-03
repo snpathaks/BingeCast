@@ -6,7 +6,7 @@ It walks through a complete end-to-end ML workflow using **synthetic data**, so 
 
 ---
 
-## 🚀 What This Project Does  
+## 🚀 What This Project Does::  
 
 BingeCast builds **two machine learning models** —  
 - **Linear Regression**  
