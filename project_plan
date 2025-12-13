@@ -1,0 +1,57 @@
+BingeCast: Predict Your Next Netflix Marathon (Step-by-Step Guide)
+
+Welcome to the BingeCast project! This guide will walk you through every step of building a machine learning model to predict how many episodes a user might binge-watch. We'll start from scratch, create our own data, and end up with a working predictor.
+
+What This Project Does ?
+
+This project builds two machine learning models (Linear Regression and Random Forest) to predict the number of episodes a user will binge-watch based on four features:
+
+Age
+
+Mood (Happy, Sad, Stressed, etc.)
+
+Preferred Genre (Comedy, Drama, etc.)
+
+Time of Day (Morning, Evening, etc.)
+
+It's a complete, beginner-friendly ML workflow in one script.
+
+How to Use
+
+1. Set Up Your Environment
+
+First, you need to have Python installed. You'll also need a few key libraries. You can install them using pip from your terminal:
+
+pip install pandas numpy scikit-learn matplotlib seaborn
+
+
+pandas & numpy: For creating and managing our data.
+
+scikit-learn (sklearn): For preprocessing, building the models, and evaluation.
+
+matplotlib & seaborn: For creating our visualizations.
+
+2. Run the Script
+
+Save the binge_predictor.py file to your computer. Open your terminal, navigate to the folder where you saved the file, and run the following command:
+
+python binge_predictor.py
+
+
+3. What Happens When You Run It
+
+The script will execute all the steps automatically and print its progress to your terminal:
+
+[Step 2]: It generates 1,000 synthetic user profiles and prints the first 5 rows (the "head") of the new dataset.
+
+[Step 3]: It generates the first set of plots for "Exploratory Data Analysis." The script will pause here. You must close the plot window that appears to let the script continue.
+
+[Step 4]: It preprocesses the data, splitting it and converting categories (like 'Happy' or 'Comedy') into numbers the models can understand.
+
+[Step 5]: It trains both the Linear Regression and Random Forest models.
+
+[Step 6]: It evaluates both models on the hidden test data and prints their R² Score (higher is better) and RMSE (lower is better). It will tell you which model performed best.
+
+[Step 7]: It generates a final set of plots showing the best model's predictions vs. the actual values, and a chart of which features (like 'Mood_Bored' or 'Time_of_Day_Late Night') were most important for making predictions.
+
+[End]: Once you close the final plot window, the script will finish.
