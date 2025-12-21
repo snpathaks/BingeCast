@@ -6,11 +6,11 @@ It walks through a complete end-to-end ML workflow using **synthetic data**, so 
 
 ---
 
-## 🚀 What This Project Does::  
+## 🚀 What This Project Does:  
 
 BingeCast builds **two machine learning models** —  
-- **Linear Regression**  
-- **Random Forest Regressor**  
+- **Linear Regression** .
+- **Random Forest Regressor** . 
 
 It then compares their performance in predicting the number of episodes a user might binge-watch.  
 
