@@ -6,7 +6,7 @@ It walks through a complete end-to-end ML workflow using **synthetic data**, so 
 
 ---
 
-## 🚀 What This Project Does:  
+## 🚀 What This Project Does ::  
 
 BingeCast builds **two machine learning models** —  
 - **Linear Regression** .
@@ -17,7 +17,7 @@ It then compares their performance in predicting the number of episodes a user m
 The model learns from four features:  
 
 | Feature | Description | Example Values |
-|----------|--------------|----------------|
+|----------------|--------------|-----------------|
 | **Age** | User’s age | 18, 25, 40 |
 | **Mood** | Current mood | Happy, Sad, Bored, Stressed |
 | **Preferred Genre** | Favorite show type | Comedy, Drama, Action, Sci-Fi |
