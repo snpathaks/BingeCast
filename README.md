@@ -1,8 +1,8 @@
-# 🎬 BingeCast: Predict Your Next Netflix Marathon :-
+# 🎬 BingeCast: Predict Your Next Netflix Marathon : 
 
 **BingeCast** is a fun, beginner-friendly machine learning project that predicts how many episodes a user might binge-watch in one sitting — based on their **age**, **mood**, **preferred genre**, and **time of day**.  
 
-It walks through a complete end-to-end ML workflow using **synthetic data**, so you can learn key data science concepts without needing a real dataset.  
+It walks through a complete end-to-end ML workflow using **synthetic data**, so you can learn key data science concepts without needing a real datasets.  
 
 ---
 
