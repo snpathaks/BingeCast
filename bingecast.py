@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-import joblib  # For saving the model
+import joblib  
 
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import OneHotEncoder
@@ -12,7 +12,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error
 
-# 1. Load Data
+
 try:
     df = pd.read_csv('bingecast_dataset.csv')
     print("✅ Dataset loaded successfully.")
@@ -20,11 +20,11 @@ except FileNotFoundError:
     print("❌ Dataset not found. Please run 'generate_data.py' first.")
     exit()
 
-# 2. Preprocessing
+
 X = df[['Age', 'Mood', 'Preferred Genre', 'Time of Day']]
 y = df['Episodes']
 
-# Define categorical features
+
 categorical_features = ['Mood', 'Preferred Genre', 'Time of Day']
 
 # Create preprocessor
@@ -35,10 +35,9 @@ preprocessor = ColumnTransformer(
     remainder='passthrough'
 )
 
-# Split data
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-# 3. Train Random Forest (Best performing model)
+
 print("\nTraining Model...")
 model_pipeline = Pipeline(steps=[
     ('preprocessor', preprocessor),
@@ -52,11 +51,11 @@ y_pred = model_pipeline.predict(X_test)
 mae = mean_absolute_error(y_test, y_pred)
 print(f"✅ Model Trained. Mean Absolute Error: {mae:.2f} episodes")
 
-# 5. Save Model
+
 joblib.dump(model_pipeline, 'bingecast_model.pkl')
 print("💾 Model saved to 'bingecast_model.pkl'")
 
-# 6. Visualization (Optional)
+
 plt.figure(figsize=(8, 6))
 sns.scatterplot(x=y_test, y= y_pred, alpha=0.6)
 plt.plot([y.min(), y.max()], [y.min(), y.max()], 'r--')
