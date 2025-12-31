@@ -41,21 +41,22 @@ def get_user_input():
     })
 
 def main():
-    # Load Model
+    
     try:
         model = joblib.load('bingecast_model.pkl')
     except FileNotFoundError:
         print("❌ Model file not found. Please run 'bingecast.py' first to train the model.")
         return
 
-    # Get Input
+    
     user_data = get_user_input()
     
-    # Predict
+    
     prediction = model.predict(user_data)[0]
     
     print(f"\n🔮 Prediction: You will likely binge-watch {int(round(prediction))} episodes!")
     print("---------------------------------------")
 
 if __name__ == "__main__":
+
     main()
