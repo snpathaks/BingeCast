@@ -38,7 +38,7 @@ Save the binge_predictor.py file to your computer. Open your terminal, navigate 
 python binge_predictor.py
 
 
-3. What Happens When You Run It
+3. What Happens When You Run It :-
 
 The script will execute all the steps automatically and print its progress to your terminal:
 
@@ -53,5 +53,6 @@ The script will execute all the steps automatically and print its progress to yo
 [Step 6]: It evaluates both models on the hidden test data and prints their R² Score (higher is better) and RMSE (lower is better). It will tell you which model performed best.
 
 [Step 7]: It generates a final set of plots showing the best model's predictions vs. the actual values, and a chart of which features (like 'Mood_Bored' or 'Time_of_Day_Late Night') were most important for making predictions.
+
 
 [End]: Once you close the final plot window, the script will finish. 
