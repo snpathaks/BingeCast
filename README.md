@@ -14,7 +14,7 @@ BingeCast builds **two machine learning models** —
 
 It then compares their performance in predicting the number of episodes a user might binge-watch.  
 
-The model learns from four features:  
+The model learns from four features: :: 
 
 | Feature | Description | Example Values |
 |------------------|------------------|-------------------|
